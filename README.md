@@ -1,4 +1,8 @@
-**# 📊 Digital Payments (UPI) Analysis**
+**📊 Digital Payments (UPI) Analysis**
+![Python](https://img.shields.io/badge/Python-150458)
+![SQL](https://img.shields.io/badge/SQL-MySQL-green)
+![EDA](https://img.shields.io/badge/EDA-Insights-informational)
+![Tableau](https://img.shields.io/badge/Tableau-blue)
 
 **🧠 Executive Summary**  
 This project analyzes UPI digital payment data to understand how transactions have grown over time and how widely UPI has been adopted.  
