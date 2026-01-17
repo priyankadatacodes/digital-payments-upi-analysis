@@ -1,101 +1,147 @@
-# **Digital Payments (UPI) Analysis**
-![Python](https://img.shields.io/badge/Python-150458)
-![SQL](https://img.shields.io/badge/SQL-MySQL-green)
-![EDA](https://img.shields.io/badge/EDA-Insights-informational)
-![Tableau](https://img.shields.io/badge/Tableau-blue)
+# **Digital Payments (UPI) Growth & Adoption Analysis**
 
-**🧠 Executive Summary**  
-This project analyzes UPI digital payment data to understand how transactions have grown over time and how widely UPI has been adopted.  
-The goal is to practice core data analyst skills using a real-world style FinTech dataset, covering cleaning, SQL analysis, and dashboarding.  
-Python was used for data cleaning, MySQL for SQL-based analysis, and Tableau for creating an easy-to-read dashboard with key trends and KPIs.  
-
----
-**📌 Project Overview**  
-UPI (Unified Payments Interface) is a real-time payment system  used for instant bank-to-bank transfers via mobile apps.  
-Every month, millions of UPI transactions are processed , making it one of the most widely used digital payment systems.  
-This project looks at historical UPI data to understand growth in transaction volume and value, average ticket size, bank adoption, and monthly or seasonal patterns. 
+![Python](https://img.shields.io/badge/Library-Python-150458)
+![SQL](https://img.shields.io/badge/SQL-MySQL-orange)
+![Dashboard](https://img.shields.io/badge/Dashboard-Tableau-blue)
 
 ---
 
-**🏦 Business Context**  
-Banks and fintech companies need to understand how digital payments are growing and how users are using them.  
-Raw transaction data is large and messy, so converting it into clean metrics, visuals, and KPIs helps businesses make simple, fast decisions.  
-This project shows how UPI data can be turned into clear charts and insights that non-technical stakeholders can understand.  
+## **Executive Summary**
+This project analyzes UPI (Unified Payments Interface) transaction data to understand how digital payments have grown over time.  
+The main goal is to practice **basic data analyst skills** using a real FinTech dataset.
+
+Python was used to clean the data, MySQL was used for SQL analysis, and Tableau was used to create a simple dashboard.  
+The dashboard shows key trends, growth, adoption by banks, and seasonal patterns in UPI transactions.
 
 ---
 
-**❓ Problem Statement**  
-There was no single summary view to quickly answer if UPI is growing over time and how usage is changing.  
-Key questions include: growth over time, seasonal changes, typical payment size, and number of banks active on UPI.  
-This project builds that summary using basic data analysis, SQL, and visualization steps.  
+## **Why I Built This Project**
+UPI is one of the most widely used digital payment systems. Millions of people use it every day.
+
+I built this project to learn and show:
+- How UPI transactions grow over time  
+- How people use UPI (small or large payments)  
+- How many banks are part of the UPI system  
+- Whether some months have higher transactions  
+
+This is similar to real work done by a data analyst.
 
 ---
 
-**🛠 Tools Used**  
-- **Python** – Data cleaning and basic analysis using scripts and notebooks  
-- **Pandas & NumPy** – Handling tabular data, transformations, and simple calculations  
-- **MySQL** – Storing cleaned data and running SQL queries for KPIs and trend checks  
-- **SQLAlchemy** – Connecting Python with MySQL for smooth data loading and querying  
-- **Tableau** – Creating an interactive, visual dashboard for UPI trends and adoption
+## **Business Context**
+Banks and fintech companies need to understand how digital payments are growing.  
+Raw data is hard to understand, so analysis is needed.
+
+This project helps convert raw UPI data into **clear numbers, trends, and charts** that are easy to read.
 
 ---
 
-**🔄 Project Workflow**  
+## **Problem Statement**
+Analyze UPI transaction data to:
+- Check growth in transactions  
+- Understand usage behavior  
+- Track bank adoption  
+- Identify seasonal patterns  
 
-**1️⃣ Data Cleaning (Python)**  
-- Loaded the raw UPI dataset into a Jupyter Notebook using Pandas  
-- Converted the month column into a proper date format and sorted records by time  
-- Renamed columns to clear, readable names and handled missing or inconsistent values  
-
-**2️⃣ Data Storage & SQL Analysis**  
-- Stored the cleaned dataset into a MySQL table for structured querying  
-- Wrote SQL queries to calculate KPIs like total volume, value, and average transaction value  
-- Checked latest month performance, month-on-month changes, and broad trends  
-
-**3️⃣ Dashboard (Tableau)**  
-- Connected Tableau to the processed data to build a one-page dashboard  
-- Added cards and charts for key KPIs, transaction trends, bank adoption, and seasonal patterns  
-- Designed the layout to be simple, interview-safe, and easy to explain in a portfolio
+Then present the results in a simple dashboard.
 
 ---
 
-**📈 Key KPIs**  
-- **Total UPI Transaction Volume** – Sum of all UPI transactions over the full time period  
-- **Total UPI Transaction Value** – Total rupee value of all transactions over time  
-- **Average Transaction Value** – Total value divided by total volume to show typical ticket size  
-- **Latest Month Transaction Volume** – Most recent month’s total transactions to track current scale  
-- **Number of Banks Live on UPI** – Count of banks active on UPI over time as a measure of adoption
+## **Dataset Overview**
+- **Source**: Public UPI transaction dataset (kaggle) 
+- **Data type**: Monthly aggregated data  
+- **Main columns**:
+  - Transaction volume  
+  - Transaction value  
+  - Average transaction value  
+  - Number of banks live on UPI  
+
+This dataset does not contain user-level data.
 
 ---
 
-**🔍 Key Insights**  
-- UPI transaction volume has increased steadily over time, reflecting strong digital payment adoption  
-- Average transaction value stays mostly stable, which suggests frequent small-value payments for daily use  
-- The number of banks on UPI increases over time, showing rising ecosystem participation  
-- Some months show higher transaction activity, indicating possible seasonal or event-based spikes
+## **Tools Used**
+- **Python** – Data cleaning  
+- **Pandas & NumPy** – Data handling  
+- **MySQL** – SQL analysis  
+- **SQLAlchemy** – Python to MySQL connection  
+- **Tableau** – Dashboard creation  
 
 ---
 
-**💡 Business Impact**  
-- Helps banks and fintechs quickly understand UPI growth using clear charts and KPIs  
-- Supports planning for capacity, marketing, and user growth based on historical trends  
-- Makes data easy to explain in stakeholder meetings, dashboards, and interview discussions
+## **Data Preparation**
+Using Python, I:
+- Loaded the dataset  
+- Converted the month column to date format  
+- Sorted data by time  
+- Renamed columns for easy understanding  
+- Handled missing values  
+
+The cleaned data was then loaded into MySQL.
 
 ---
 
-**📊 Dashboard**  
-The Tableau dashboard highlights UPI growth over time, usage behavior, bank adoption, and seasonality in a single view.  
-It is designed as a simple one-page dashboard so that hiring managers and non-technical viewers can quickly understand the story.  
-A static PNG image of the dashboard is saved in the `/dashboard` folder for GitHub preview.  
+## **Analysis Approach**
+Steps followed in this project:
+1. Clean data using Python  
+2. Load cleaned data into MySQL  
+3. Use SQL to calculate KPIs and trends  
+4. Analyze growth, adoption, and seasonality  
+5. Create a one-page Tableau dashboard  
 
 ---
 
-**🧾 Conclusion**
-This project shows the ability to clean data in Python, load it into MySQL, write SQL queries, and build a clear Tableau dashboard.
-It reflects the basic skills required for a fresher Data Analyst role, especially in the FinTech domain.
+## **Key KPIs Tracked**
+- Total UPI Transaction Volume  
+- Total UPI Transaction Value  
+- Average Transaction Value  
+- Latest Month Transaction Volume  
+- Number of Banks Live on UPI  
 
 ---
 
-**👤 Author**
-**Priyanka Lakra**
-Fresher Data Analyst
+## **Key Insights**
+- UPI transaction volume has increased over time  
+- Average transaction value is mostly stable  
+- More banks are joining UPI every year  
+- Some months have higher transaction activity  
+
+---
+
+## **Business Impact**
+- Helps understand how fast UPI is growing  
+- Helps in planning system capacity  
+- Shows adoption of UPI by banks  
+- Makes data easy to understand for business teams  
+
+---
+
+## **Dashboard Overview**
+The Tableau dashboard shows:
+- Key KPIs  
+- Transaction trends  
+- Bank adoption trends  
+- Seasonal patterns  
+
+The dashboard is simple and easy to understand.
+
+---
+
+## **Final Takeaway**
+UPI has grown strongly over time.  
+This project shows how data analysis can turn raw payment data into useful insights.
+
+---
+
+## **What This Project Shows**
+- Data cleaning using Python  
+- SQL analysis using MySQL  
+- KPI calculation  
+- Dashboard creation using Tableau  
+
+---
+
+## **Author**
+**Priyanka Lakra**  
+Data Analyst (Fresher)  
+SQL | Python | Tableau  
