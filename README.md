@@ -1,4 +1,4 @@
-**📊 Digital Payments (UPI) Analysis**
+# **Digital Payments (UPI) Analysis**
 ![Python](https://img.shields.io/badge/Python-150458)
 ![SQL](https://img.shields.io/badge/SQL-MySQL-green)
 ![EDA](https://img.shields.io/badge/EDA-Insights-informational)
